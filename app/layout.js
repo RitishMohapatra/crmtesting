@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+// import { Head } from 'next/document'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,6 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+        id="123123213"
+        src="https://assets.kylas.io/lead-capture-forms/qa/lcf.min.js" form-id="01350a0a-c810-4c6c-adb0-ce5c12e44bdd" api-key="929e293f-f267-4d4e-8dfb-cb231ec08c3e:15"
+      >
+      </Script>
       <body className={inter.className}>{children}</body>
     </html>
   )
